@@ -4,6 +4,6 @@ namespace CircuitBreakerDesignPattern.HttpClients
 {
     public interface ISendRequestToExternalProviderHttpClient
     {
-        Task<MockResponseDTO> SendRequestByMockRequestSomething(MockRequestDTO mockRequestDTO);
+        Task<MockResponseDTO> SendRequestByMockRequest(MockRequestDTO mockRequestDTO);
     }
 }
