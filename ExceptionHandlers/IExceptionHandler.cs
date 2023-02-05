@@ -1,6 +1,10 @@
-﻿namespace CircuitBreakerDesignPattern.ExceptionHandlers
+﻿using CircuitBreakerDesignPattern.Models;
+
+namespace CircuitBreakerDesignPattern.ExceptionHandlers
 {
-    public class IExceptionHandler
+    public interface IExceptionHandler
     {
+        void HandleException(Exception e, ILogger logger);
+        Error GetError(Exception e);
     }
 }
